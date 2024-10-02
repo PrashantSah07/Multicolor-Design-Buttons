@@ -1,0 +1,89 @@
+.container {
+    border: 10px solid rgb(175, 46, 255);
+    border-radius: 50px;
+    background-color: black;
+    height: 50vh;
+    width: 50vw;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly; 
+    transition: 1s;
+}
+
+.container:hover {
+    transform: translate(100px);
+    transition: 1s;
+}
+
+.button {
+    border: 2px solid white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8vw;
+    height: 5vh;
+    transition: 0.3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+.button:first-child:hover {
+    border-color: blue;
+    color: blue;
+    box-shadow: 0px 0px 10px blue;
+    transform: scale(1.2);
+}
+
+.button:nth-child(2):hover {
+    border-color: rgb(0, 255, 0);
+    color: rgb(0, 255, 0);
+    box-shadow: 0px 0px 10px rgb(0, 255, 0);
+    transform: scale(1.2);
+}
+
+.button:last-child:hover {
+    color: red;
+    border-color: red;
+    box-shadow: 0px 0px 10px red;
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width:1050px) {
+    .container:hover {
+        transform: rotate(360deg);
+    }
+    .button {
+        width: 10vw;
+    }
+}
+
+@media only screen and (max-width:850px) {
+    .container:hover {
+        transform: rotate(360deg);
+    }
+    .button {
+        width: 15vw;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .container:hover {
+        transform: rotate(360deg);
+    }
+    .button {
+        width: 18vw;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .container:hover {
+        transform: rotate(360deg);
+    }
+    .button {
+        width: 27vw;
+    }
+}
